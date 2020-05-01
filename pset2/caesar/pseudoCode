@@ -1,0 +1,32 @@
+1. Accept a single command-line argument, a non-negative integer.
+
+2. If no command-line argument, or with more than one command-line argument,
+it should print an error message and return 1 in the main function.
+
+3. If the command-line argument is not a decimal number, it should print
+Usage: ./caesar key, and return 1 in the main function.
+
+4. it should prompt user to type the plaintext.
+
+5. it should only encrypt the english alphabet, and remain the case.
+
+6. it should output the cipertext by rotate k positions, after outputting ciphertext,
+it should print a newline.
+
+
+check the number of command-line argument is 1
+If 1 (k)
+    If decimal number
+        prompt user to type plaintext
+        loop all the character of the plaintext
+            If English alphabet
+                rotate k position
+            ELSE
+                no rotate
+        end
+        output cipertext
+
+    ELSE
+        error message (Usage: ./caesar key)
+ELSE
+    error message
