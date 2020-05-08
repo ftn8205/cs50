@@ -1,0 +1,13 @@
+If one command-line argument and all alphabet and the alphabet no repeat
+    If the number command-line argument are 26
+        prompt user type plaintext
+        loop the word of plaintext
+            If alhpabet
+                transfer the word to the corresponding key in the command line argument
+            Else
+                no change the word
+        print ciphertext
+    Else Key must contain 26 characters
+
+
+Else Usage: ./substitution key
