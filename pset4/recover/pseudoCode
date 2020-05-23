@@ -1,0 +1,15 @@
+If (command-line argument is exactly 1)
+    If (raw file can open)
+        Loop until FileEnd
+            read file 512 bytes at a time
+            If (its signature is jpeg)
+                If (first jpeg)
+                    write in the file
+                Else
+                    (close this file and open another file to write)
+            Else
+                If (This is jpeg)
+                    write file
+    ELSE return 1
+
+Else return 1
