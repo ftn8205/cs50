@@ -1,0 +1,10 @@
+.background-design {
+    background: linear-gradient( 35deg,#CCFFFF, #FFCCCC);
+    height:500px;
+}
+
+.welcome {
+    font: 100px Arial, sans-serif;
+    padding-top: 200px;
+    text-align: center;
+}

@@ -1,0 +1,31 @@
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.button-direction {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.blog {
+    background: #F0F8FF;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.title {
+    font: 40px Arial, sans-serif;
+    text-align: center;
+}
+
+.see-more {
+    text-align: center;
+}
+
+.create-blog {
+    margin-bottom: 10px;
+    text-align: center;
+}

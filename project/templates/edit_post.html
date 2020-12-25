@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+<form action="/edit?id={{ article[0]['id'] }}" method="post">
+  <div class="form-group" id="article-title">
+    <label for="exampleFormControlInput1">Title</label>
+    <input type="text" name="title" class="form-control" value="{{ article[0]['title'] }}" id="exampleFormControlInput1">
+  </div>
+  <div class="form-group" id="article-content">
+    <label for="exampleFormControlTextarea1">Content</label>
+    <textarea class="form-control" name="content" id="exampleFormControlTextarea1" rows="3">{{ article[0]['content'] }}</textarea>
+  </div>
+
+  <button class="btn btn-primary" type="submit">Submit</button>
+
+
+
+</form>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Detail
+{% endblock %}
+
+{% block main %}
+
+    <div class="row">
+        <div class="col blog">
+            <p class="title">
+                {{ article[0]['title'] }}
+            </p>
+
+            <p> {{ article[0]['content'] }}</p>
+        </div>
+    </div>
+    <div>
+        <form action="/blog">
+            <button class="btn btn-secondary" type="submit">Back</button>
+        </form>
+    </div>
+
+{% endblock %}

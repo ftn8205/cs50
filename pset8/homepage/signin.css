@@ -1,0 +1,30 @@
+#container
+{
+    display: flex;
+    flex-direction:column;
+}
+
+#signin
+{
+    font-family: verdana;
+    text-align: center;
+    background: linear-gradient( 35deg,#CCFFFF, #FFCCCC);
+    padding: 30px;
+    border: 2px solid green;
+    margin: 50px auto;
+}
+
+#newuser
+{
+    color: white;
+    font-family: verdana;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px solid green;
+    margin: 50px auto;
+}
+
+#newuser a
+{
+    text-decoration: underline;
+}

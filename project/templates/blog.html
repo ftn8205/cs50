@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <div class="container">
+        <div class="create-blog">
+            <button class="btn btn-primary" onclick="javascript:location.href='/new_post'" type="button">Add New Post</button>
+        </div>
+
+        {% for article in articles %}
+
+            <div class="row">
+
+                <div class="col blog">
+                    <p class="title">
+                        {{ article['title'] }}
+                    </p>
+
+                    <p> {{ article['content'] }}</p>
+                    <div class="button-direction">
+                        <div class="see-more">
+                            <form action="/detail">
+                                <input type="hidden" name="id" value="{{article['id']}}">
+                                <button class="btn btn-secondary" value="id" type="submit">See More</button>
+                            </form>
+                        </div>
+                        <div class="see-more">
+                            <form action="/delete">
+                                <input type="hidden" name="id" value="{{article['id']}}">
+                                <button class="btn btn-danger" value="id" type="submit">Delete</button>
+                            </form>
+                        </div>
+                        <div class="see-more">
+                            <form action="/edit">
+                                <input type="hidden" name="id" value="{{article['id']}}">
+                                <button class="btn btn-info" value="id" type="submit">Edit</button>
+                            </form>
+                        </div>
+
+                    </div>
+
+
+            </div>
+        {% endfor %}
+
+        </div>
+
+    </div>
+{% endblock %}
